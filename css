@@ -1,1 +1,127 @@
+icon.css
+.rel { position: relative; }
+.abs { position: absolute; }
+.fixed { position: fixed; }
+.bl { display: block; }
+.ibl { display: inline-block; }
+.mibl { display: inline-block; vertical-align: middle; }
+.noul { text-decoration: none; }
+.anim { transition: all 0.3s ease; }
+props.css
+
+scroll.css
+/* Stilimi i scrollbars */
+.scrollbars::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.scrollbars::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 3px;
+}
+.scrollbars::-webkit-scrollbar-track {
+    background: #111;
+}
+
+core.css /* Ngjyrat dhe rregullat kryesore */
+body {
+    background-color: #121214;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-left: 240px; /* Lihet hapësirë për sidebar-in */
+}
+
+.color333 { color: #333; }
+.size14 { font-size: 14px; }
+.size30 { font-size: 30px; }
+.cfff { color: #fff; }
+
+ (Sidebar) */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #1a1a1e;
+    left: 0;
+    top: 0;
+    padding: 20px 10px;
+    border-right: 1px solid #29292e;
+}
+
+.sidebar .logo img {
+    max-width: 160px;
+    margin-bottom: 30px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav li a {
+    color: #b3b3b3;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.nav li a.on, .nav li a:hover {
+    background-color: #29292e;
+    color: #fff;
+}
+
+/* Seksioni i Këngëve (Tracks) */
+.featured-section {
+    padding: 40px;
+}
+
+.areaTitle {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.tracks {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tracks li a {
+    background: #1a1a1e;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #29292e;
+}
+
+.tracks li a:hover {
+    background: #232329;
+    transform: translateY(-2px);
+}
+
+.mThumb img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.mDet h2 {
+    margin: 0;
+}
+
+.mDet .naam {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.mDet .loops {
+    color: #8a8a93;
+    font-size: 12px;
+}
 
